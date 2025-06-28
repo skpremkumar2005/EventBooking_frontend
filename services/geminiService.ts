@@ -87,7 +87,7 @@ export const getVenueRecommendations = async (eventType: string, location: strin
     if (typeof error === 'string' && error.includes("API key not valid")) {
         errorMessage = "The AI service API key is invalid. Please check the configuration.";
     }
-    return { error: errorMessage };
+    return { error: "unAvailable"};
   }
 };
 
